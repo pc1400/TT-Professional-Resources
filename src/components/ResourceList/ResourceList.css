@@ -50,11 +50,6 @@
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s ease;
-  border-bottom: 1.5px solid transparent;
-}
-
-.contact-info a:hover {
-  border-color: #e5a600;
 }
 
 .welcome-image {
