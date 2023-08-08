@@ -1,0 +1,47 @@
+/* NavigationMenu.css */
+.navigation-menu {
+  /* width: 12%; */
+  min-width: 200px;
+  padding: 20px;
+  background-color: #f6f9fd;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-item {
+  font-family: "Product Sans", Arial, sans-serif;
+
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 40px;
+  padding-left: 20px;
+
+  margin-bottom: 12px; /* Increased margin for better spacing */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1e1e1f;
+  border-radius: 20px;
+
+  transition: background-color 0.2s ease;
+}
+
+.category-icon {
+  margin-right: 8px; /* Add spacing between the icon and text */
+}
+
+.category-item.active {
+  background-color: #febb00;
+  border-radius: 20px;
+}
+
+.category-item:not(.active):hover {
+  background-color: #e0e0e0;
+  border-radius: 20px;
+}

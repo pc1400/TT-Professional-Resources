@@ -1,0 +1,51 @@
+/* Header.css */
+.header {
+  background-color: #f6f9fd; /* Theta Tau blue color */
+  padding: 16px;
+  font-family: "Product Sans", Arial, sans-serif;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+  color: #1e1e1f;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  height: 90px;
+  margin-right: 5px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  /* color: #e5a600; */
+}
+
+.header-subtitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  /* Responsive styling for smaller devices */
+  .header-title {
+    font-size: 20px;
+  }
+
+  .header-subtitle {
+    font-size: 14px;
+  }
+}
+
+/* gold: #E5A600 */
+/* red: #800000 */
+/* off-white: #FAFAFA */

@@ -1,0 +1,26 @@
+/* ResourceList.css */
+.resource-list {
+  flex: 1;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 10px; /* Add a border radius */
+  background-color: #fefffe; /* Add a background color to the resource list */
+  overflow: auto; /* Add overflow to allow scrolling if needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.resource-list h2 {
+  font-family: "Product Sans", Arial, sans-serif;
+  color: #1e1e1f;
+  margin-left: 8px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Adjust this to control the space between cards */
+}
