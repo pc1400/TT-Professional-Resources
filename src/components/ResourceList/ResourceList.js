@@ -32,27 +32,27 @@ const ResourceList = ({ selectedCategory }) => {
     ],
     "Professional Development": [
       {
-        title: "Professional Program Session 1",
+        title: "Session 1: Interviewing",
         thumbnail: "ProfTrainingCard1",
         link: "https://docs.google.com/presentation/d/1k49BMCA1SfpR7d98Gb3tI-eKqYjXAizhA8XkE1yNfAw/edit#slide=id.p1",
       },
       {
-        title: "Professional Program Session 2",
+        title: "Session 2: Networking",
         thumbnail: "ProfTrainingCard2",
         link: "https://docs.google.com/presentation/d/1C_vJpSqVHHa7rpXUPw9hXTWBTw2_Gw5DeSwJf7Oj4dM/edit#slide=id.p1",
       },
       {
-        title: "Professional Program Session 3",
+        title: "Session 3: Undergrad Research",
         thumbnail: "ProfTrainingCard3",
         link: "https://docs.google.com/presentation/d/1bCNX2zBD8YQQ2878xaoTg57ciPXTamK8erhq0J8R4KU/edit#slide=id.p22",
       },
       {
-        title: "Professional Program Session 4",
+        title: "Session 4: Careers & Majors",
         thumbnail: "ProfTrainingCard4",
         link: "https://docs.google.com/presentation/d/1hUWRv0ep-aYrgWfjUIOI8fnO7YQ1UkkAa0VWl6C7kkY/edit#slide=id.p22",
       },
       {
-        title: "Professional Program Session 5",
+        title: "Session 5: Work/Life Balance",
         thumbnail: "ProfTrainingCard5",
         link: "https://docs.google.com/presentation/d/18jeIBCDx0AaVNis3IKEWyFVwKOaYlX86MfKwbgNkaaI/edit#slide=id.p22",
       },
