@@ -1,15 +1,21 @@
 import React from "react"
 import "./ResourceList.css" // Import the CSS file for the main content area styling (optional).
 import ResourceCard from "./ResourceCard" // Import the generic ResourceCard component.
+import WelcomeImage from "../../assets/images/logo.png" // Import your image
 
 const ResourceList = ({ selectedCategory }) => {
   // Sample resource data (you can replace this with your actual resource data)
   const resources = {
     "Interview Preparation": [
       {
-        title: "Interview prep for Bros",
+        title: "How to Interview",
         thumbnail: "InterviewCard",
         link: "https://docs.google.com/presentation/d/1qIKdrsWVR39Q6IjWVyOVTz4uWiVoQQHON1lX1FRIguA/edit#slide=id.p1",
+      },
+      {
+        title: "Behavioral Interview Preparation",
+        thumbnail: "BehavioralInterviewCard",
+        link: "https://docs.google.com/presentation/d/1qaf5WyJr29vqBHbUpLlxdFRHFatKs5z3UfM06dUYIrk/edit#slide=id.ge8bd82eafc_0_192",
       },
       {
         title: "Go2Pros",
@@ -60,6 +66,11 @@ const ResourceList = ({ selectedCategory }) => {
         thumbnail: "ResumeCard",
         link: "https://docs.google.com/spreadsheets/d/1FzyftPuxdDOyyPT66up7Bt07Wur3zUfFZdlxjGHcUso/edit#gid=0",
       },
+      {
+        title: "Professional Spotlight",
+        thumbnail: "ProfessionalSpotlightCard",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSeFMqmb3f7iL5l-ODhwo_uxfYRokrW31r5PygCg6HeAzjGVQg/viewform",
+      },
     ],
     "Undergraduate Research": [
       {
@@ -89,10 +100,26 @@ const ResourceList = ({ selectedCategory }) => {
   }
 
   return (
-    <div className="resource-list">
+    <div class="resource-list">
       <h2>{selectedCategory}</h2>
-      <div className="cards-container">
-        {getResourceCards(selectedCategory)}
+      <div class="cards-container">
+        {selectedCategory ? (
+          getResourceCards(selectedCategory)
+        ) : (
+          <div class="welcome-section">
+            <h2 class="welcome-title">
+              Welcome to <span class="TT">Theta Tau's</span> Professional
+              Resources Page!
+            </h2>
+            <p class="contact-info">
+              Please contact Meghana Mangalvedhe (
+              <a href="mailto:mm76@illinois.edu">mm76@illinois.edu</a>) for any
+              questions or further resources
+            </p>
+            <img src={WelcomeImage} alt="Welcome" className="welcome-image" />
+          </div>
+        )}
+        {/* {getResourceCards(selectedCategory)} */}
       </div>
     </div>
   )
