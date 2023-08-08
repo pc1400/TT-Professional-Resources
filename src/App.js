@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import Header from "./components/Header/Header"
 import NavigationMenu from "./components/NavigationMenu/NavigationMenu"
 import ResourceList from "./components/ResourceList/ResourceList" // Import the ResourceList component
